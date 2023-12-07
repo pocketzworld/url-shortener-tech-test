@@ -3,14 +3,12 @@ from fastapi.responses import RedirectResponse
 from fastapi.responses import Response
 from pydantic import BaseModel
 from redisstore import RedisStore
-#from mssqlstore import MSSqlStore
 import encoder
 from utils import fix_protocol
 
 app = FastAPI()
 BASE_URL: str = "http://locahost:8000"
 urlstore = RedisStore()
-#urlstore = MSSqlStore()
 
 
 class ShortenRequest(BaseModel):
