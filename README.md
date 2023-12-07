@@ -68,3 +68,38 @@ implementation decisions and their trade-offs.
 
 Good luck, and we look forward to seeing your URL Shortener project! If you have any questions or need
 clarifications, please reach out to us.
+
+## Implementation
+This implementation is using Redis as a data store.  To run you need to install Redis or connect to existing Redis server.
+
+### Install and test Redis locally
+
+Mac: 
+
+```commandline
+brew install redis
+```  
+Windows:
+
+```commandline
+choco install redis
+``` 
+start Redis:
+
+```commandline
+redis-server
+```
+
+test connection to redis from another shell:
+
+```commandline
+telnet localhost 6379
+```
+
+### Update configuration
+
+in `redisstore.py`, make sure you set `CONST_REDIS_SERVER` and `CONST_REDIS_PORT` to point to your running Redis instance
+    
+if running Redis locally:
+  * if running from VSCode, set to `localhost`
+  * if running from Docker, set to `host.docker.internal`
