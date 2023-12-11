@@ -2,7 +2,12 @@
 Welcome to the Pocket Worlds URL Shortener Take-Home Project! In this repository, we'd like you to demonstrate your
 engineering skills by creating a small Python project that implements a URL Shortener web service.
 
-This project will serve as the primary jumping off point for our technical interviews.
+This project will serve as the primary jumping off point for our technical interviews. We expect you to spend a 
+couple of hours building an MVP that meets the requirements in the Product Description. You are free to implement 
+your solution and modify the provided template in the way that makes the most sense to you, but make sure to 
+update the README accordingly so that it's clear how to run and test your project. During the interviews, you will 
+be asked to demo your solution and discuss the reasoning behind your implementation decisions and their trade-offs. 
+Be prepared to share your screen for live coding and problem solving with your interviewers based on this discussion.
 
 ## Project Description
 Using the provided Python project template, your task is to implement a URL Shortener web service that exposes
@@ -15,8 +20,8 @@ the following API endpoints:
 
 Your solution must support running the URL shortener service with multiple workers.
 
-For example, it should be possible  to start two instances of the service, make a request to shorten a URL
-to one instance, and be able to resolve that shortened URL by sending subsequent request to the second instance. 
+For example, it should be possible to start two instances of the service, make a request to shorten a URL
+to one instance, and be able to resolve that shortened URL by sending subsequent requests to the second instance. 
 
 ## Getting Started
 
@@ -33,8 +38,10 @@ The API endpoints can be found in `server.py`.
 
 A Makefile and Dockerfile are also included for your convenience to run and test the web service.
 
-You are not required to use Docker for your implementation, so feel free to modify this project and README
-to reflect how your implementation should be run and tested.
+Note that you are not required to use Docker or the provided FastAPI skeleton for your implementation, if you are 
+more comfortable with other tools or frameworks. Your solution must still meet the requirements described in the 
+Project Description. The following sections will assume that you are using Docker and FastAPI, but feel free to 
+update the project and make sure to modify the README to reflect how your implementation should be run and tested. 
 
 ### Running the service
 
@@ -65,6 +72,9 @@ When you have completed the project, please follow these guidelines for submissi
 Feel free to be creative in how you approach this project. Your solution will be evaluated based on code quality,
 efficiency, and how well it meets the specified requirements. Be prepared to discuss the reasoning behind your
 implementation decisions and their trade-offs.
+
+Remember that this project is the basis for the technical interviews, which do include live coding. We will not
+ask you to solve an algorithm, but you will be expected to demo your solution and explain your thought process.
 
 Good luck, and we look forward to seeing your URL Shortener project! If you have any questions or need
 clarifications, please reach out to us.
